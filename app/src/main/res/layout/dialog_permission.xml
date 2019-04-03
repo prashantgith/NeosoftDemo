@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_permission_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="start"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_permission_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:elevation="2dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+       <!-- <LinearLayout
+            android:id="@+id/btn_cancel"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.kuaforworld.app.Utils.HelVeticaBoldTextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center"
+                android:text="@string/cancel1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </LinearLayout>-->
+
+
+        <!--<com.balysv.materialripple.MaterialRippleLayout
+            app:mrl_rippleDuration="100"
+            app:mrl_rippleColor="@color/greycolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:elevation="2dp"
+            android:id="@+id/btn_allow"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_decision"
+                android:layout_width="80dp"
+                android:layout_height="40sp"
+                android:gravity="center"
+                android:text="@string/allow"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--</com.balysv.materialripple.MaterialRippleLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>
